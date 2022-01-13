@@ -228,18 +228,7 @@ footer .navbar ul li {
 /* Modible device */
 
 @media only screen and (max-width:688px) {
-    .container {
-        width: 90%; /*much better than 100% */
-    }
 
-    .players, .blogs,.courses {
-        grid-template-columns: repeat(1, 1fr); /*1fr dile hoi na */
-    }
-
-    .player, .blog, .course {
-        flex-direction: column;
-    }
-  
     .navbar {
         height: 150px;
         width: 90%;
@@ -254,6 +243,23 @@ footer .navbar ul li {
         justify-content: space-between;
     }
 
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 90%; /*much better than 100% */
+    }
+
+    .players, .blogs,.courses {
+        grid-template-columns: repeat(1, 1fr); /*1fr dile hoi na */
+    }
+
+    .player, .blog, .course {
+        flex-direction: column;
+    }
+  
+
     footer .navbar ul li {
         margin:0 10px;
     }
@@ -266,9 +272,7 @@ footer .navbar ul li {
         margin:0 10px;
     }
 
-    .navbar ul li a {
-        font-size: 12px;
-    }
+
     
 }
 
@@ -277,6 +281,11 @@ footer .navbar ul li {
 
 @media only screen and (min-width:688px) 
 and (max-width:992px) {
+    
+    .navbar {
+        justify-content: space-around;
+    }
+    
     .container {
         width: 85%; /*much better than 100% */
     }
@@ -284,6 +293,7 @@ and (max-width:992px) {
     .players, .blogs,.courses {
         grid-template-columns: repeat(2, 1fr); /*1fr dile hoi na */
     }
+
 
 
 }
